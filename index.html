@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guitars!!!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #000;
+      color: #f5f5f5;
+    }
+
+    .header-jackson {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #111;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .header-jackson .logo {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 32px;
+    }
+
+    .header-jackson .search-bar {
+      flex-grow: 1;
+      margin: 10px 20px;
+      display: flex;
+      align-items: center;
+      max-width: 600px;
+    }
+
+    .header-jackson .search-bar input {
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .header-jackson .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+      flex-wrap: wrap;
+    }
+
+    .header-jackson .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .header-jackson .icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .header-jackson .icon {
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+    }
+
+    .navbar-dark .navbar-brand,
+    .navbar-dark .nav-link,
+    .dropdown-menu-dark .dropdown-item {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+      background: #000;
+      margin: 20px auto;
+      width: 90%;
+    }
+
+    .carousel-inner img {
+      border-radius: 15px;
+      max-height: 700px;
+      object-fit: cover;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .card {
+      width: 18rem;
+      background: #111;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+      text-align: left;
+      padding: 15px;
+      color: #fff;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #e50914;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #c40812;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-jackson">
+    <div class="logo">Jackson®</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+    </div>
+    <div class="nav-links">
+      <a href="/amps">Amps</a>
+      <a href="/acoustic">Acoustic</a>
+      <a href="/bass">Basses</a>
+      <a href="#">Accessories</a>
+      <a href="#">Artists</a>
+      <a href="#">Custom Shop</a>
+    </div>
+    <div class="icons">
+      <div class="icon"></div>
+      <div class="icon"></div>
+    </div>
+  </div>
+  <main>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://musicsorbonline.com/wp-content/uploads/2014/09/Guitar-Room.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Music-room-wall-design-ideas.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://64.media.tumblr.com/6632f5eba9615bc3e61d04f9eb85e7f1/tumblr_ok6s4qYyFO1qc3g8bo1_1280.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=850/https://www.fmicassets.com/Damroot/eCommPNG/10002/2914413503_gtr_frt_001_rr.png" alt="King V">
+        <div class="card-body">
+          <h5 class="card-title">King V</h5>
+          <p class="card-text">High-performance guitar with excellent playability and stage performance.</p>
+          <a href="https://intl.jacksonguitars.com/products/pro-series-king-v-kv" class="btn">Buy now!</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=850/https://www.fmicassets.com/Damroot/eCommPNG/10004/2914327580_jac_ins_frt_1_rr.png" alt="Pro Plus Soloist">
+        <div class="card-body">
+          <h5 class="card-title">Pro plus series soloist</h5>
+          <p class="card-text">High-performance guitar with excellent playability and stage performance.</p>
+          <a href="https://intl.jacksonguitars.com/products/pro-plus-series-soloist-sla3q" class="btn">Buy now!</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=850/https://www.fmicassets.com/Damroot/eCommPNG/10001/2919904552_jac_ins_frt_01_rr.png" alt="MF-1">
+        <div class="card-body">
+          <h5 class="card-title">Marty friedman signature mf-1</h5>
+          <p class="card-text">High-performance guitar with excellent playability and stage performance.</p>
+          <a href="https://intl.jacksonguitars.com/products/pro-series-signature-marty-friedman-mf-1-purple-mirror" class="btn">Buy now!</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=850/https://www.fmicassets.com/Damroot/eCommPNG/10019/2916942598_jac_ins_frt_1_rr.png" alt="Soloist Camo">
+        <div class="card-body">
+          <h5 class="card-title">X series soloist Camo</h5>
+          <p class="card-text">High-performance guitar with excellent playability and stage performance.</p>
+          <a href="https://intl.jacksonguitars.com/products/x-series-soloist-slx-dx-camo" class="btn">Buy now!</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-white text-center text-lg-start bg-black">
+    <div class="container p-4">
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+
+          <p>
+            sggssghsfghsgfhsgfhsfghsfhsfhsfghfhgfhsfhshs
+            sfhgfgfhfghsfgh
+            sghsghhsfhsf
+          </p>
+
+          <p>
+            dfsdfhdfgsdfgdfgsdfg
+            sdfgsdfgsdfgsdfgdfgsdfgsdfgdfg
+            dsgdfgdfgdfgdfgsdfgsdfgdfgdgdfgsdggfdsg
+          </p>
+
+          <div class="mt-4">
+            <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+            <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+          <div class="form-outline form-white mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+            <label class="form-label" for="formControlLg">Search</label>
+          </div>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Tbilisi, 00-967, Georgia</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">luka.kikadze2009@gmail.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+995 599 16 05 29</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="fw-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2025 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+
+</div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
